@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Iron Paws",
+    "slug": "iron-paws",
+    "scheme": "ironpaws",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0B0D",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0B0D"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ironpaws.fitness",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "UIUserInterfaceStyle": "Dark",
+        "NSFaceIDUsageDescription": "Iron Paws does not use Face ID."
+      }
+    },
+    "android": {
+      "package": "com.ironpaws.fitness",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0B0D"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE-WITH-YOUR-EAS-PROJECT-ID"
+      }
+    }
+  }
+}
